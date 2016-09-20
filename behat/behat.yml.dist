@@ -7,7 +7,6 @@ default:
         - Drupal\DrupalExtension\Context\MarkupContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrupalContext
-        - NuvoleWeb\Drupal\Tests\Behat\TestContext
         - NuvoleWeb\Drupal\DrupalExtension\Context\DrupalContext
   extensions:
     Behat\MinkExtension:
