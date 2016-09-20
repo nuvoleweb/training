@@ -8,6 +8,7 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrupalContext
         - NuvoleWeb\Drupal\DrupalExtension\Context\DrupalContext
+        - NuvoleWeb\Drupal\Tests\FeatureContext
   extensions:
     Behat\MinkExtension:
       goutte: ~

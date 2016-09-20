@@ -46,3 +46,13 @@ Given the following user story:
 refine its content before publishing it.
 
 Write a Behat scenario that captures it and run it.
+
+### Exercise 3: Write a custom Behat step
+
+Assert that a node is not published by implementing the following custom step:
+
+```gherkin
+Then the content "My first article" is not published
+```
+
+so that we don't have to visit the content administration section.

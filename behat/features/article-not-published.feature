@@ -12,5 +12,5 @@ Feature: Article management
 
     Given I fill in "Title" with "My first article"
     And I press the "Save as unpublished" button
-    When I am on "admin/content"
-    Then I should see "Unpublished" in the "My first article" row
+
+    Then the content "My first article" is not published
