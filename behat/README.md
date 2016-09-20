@@ -37,3 +37,12 @@ $ ./vendor/bin/behat
 15 steps (15 passed)
 0m2.54s (30.73Mb)
 ```
+
+### Exercise 2: Write a Behat scenario
+
+Given the following user story:
+
+> As a site administrator, when I create an article, I would like it to be not published by default so that I can
+refine its content before publishing it.
+
+Write a Behat scenario that captures it and run it.
