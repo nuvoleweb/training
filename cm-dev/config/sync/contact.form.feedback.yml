@@ -1,0 +1,12 @@
+uuid: 020724b4-cc55-48e1-8c0b-82fbe9ec4956
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - drupal@example.com
+reply: ''
+weight: 0
