@@ -22,6 +22,9 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/config_installer": "~8.0",
+        "drupal/config_split": "~8.0",
+        "drupal/coffee": "~8.0",
+        "drupal/devel": "~8.0",
         "drupal/console": "~1.0"
     },
     "require-dev": {
