@@ -52,3 +52,15 @@ cd ../../cm-live/web
 ```
 
 Verify that the configuration changed on the live site.
+
+
+
+### Exercise 3: Overriding configuration with settings.php
+
+Override the configuration on the development site by including the example.settings.local.php
+
+```php
+$config['system.site']['name'] = "Development site";
+```
+
+Note: Not all configuration can be overridden like this, notable examples are enabled modules and color of bartik.
