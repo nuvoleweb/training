@@ -29,3 +29,26 @@ echo "\$config_directories['sync'] = '../../cm-dev/config/sync';" >> sites/defau
 ```
 Note: We set the live config directory to be the same as the development directory.
 Of course in a real scenario you use the same path but a separate clone of the environment.
+
+
+
+### Exercise 2: Deploy configuration from dev to live
+
+Change configuration on dev.
+
+```bash
+# Make sure we are on the development site
+cd cm-dev/web
+# Export configuration
+../vendor/bin/drush config-export
+# Commit and push it.
+git add ../config && git commit -m "Update configruation"
+# Switch to live site
+cd ../../cm-live/web
+# preview configuration import (skipping the git pull since it is the same repo here)
+../vendor/bin/drush config-import --preview=diff -n
+# do the import
+../vendor/bin/drush config-import
+```
+
+Verify that the configuration changed on the live site.
