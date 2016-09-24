@@ -38,3 +38,16 @@ Recover from:
 - merge before commit: Manual labour on conflicts
 - import before export: Deletes your work, no backup
 - no import: Next export will not contain merged config, more difficult to solve in git.
+
+
+
+### Exercise 3: Configuration edits on live site
+
+Try out `config_readonly`
+
+```
+# Activate lock
+echo "\$settings['config_readonly'] = TRUE;" >> sites/default/settings.php
+```
+
+Alternative: Specify all allowed configuration in a Configuration Split.
