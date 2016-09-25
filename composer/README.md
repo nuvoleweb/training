@@ -7,6 +7,10 @@ Composer hands-on session branch. Practical assignments are organized in the fol
 
 ## Exercise 1: Create a new Composer project.
 
+The final result is in the `my-composer-project-built` directory.
+
+The `composer-1.sh` will run all following commands and populate the `my-composer-project` directory.
+
 ```bash
 # Install composer as per https://getcomposer.org/download/
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -22,3 +26,5 @@ cd my-composer-project
 # Create new project by requiring a package.
 composer require twig/twig
 ```
+
+
