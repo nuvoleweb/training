@@ -1,0 +1,14 @@
+{
+  "name": "drupal/training",
+  "type": "drupal-module",
+  "description": "Training Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/training",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/training",
+    "source": "http://cgit.drupalcode.org/training"
+  },
+  "require": { }
+}

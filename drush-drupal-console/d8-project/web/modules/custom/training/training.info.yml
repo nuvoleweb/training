@@ -1,0 +1,7 @@
+name: Training
+type: module
+description: Training Module
+core: 8.x
+package: Custom
+dependencies:
+  - views
