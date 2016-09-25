@@ -9,7 +9,7 @@ Composer hands-on session branch. Practical assignments are organized in the fol
 
 The final result is in the `my-composer-project-built` directory.
 
-The `composer-1.sh` will run all following commands and populate the `my-composer-project` directory.
+The `composer-1.sh` script will run all following commands and populate the `my-composer-project` directory.
 
 ```bash
 # Install composer as per https://getcomposer.org/download/
