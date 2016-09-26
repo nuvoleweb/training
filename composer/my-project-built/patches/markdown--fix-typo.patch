@@ -1,0 +1,13 @@
+diff --git a/README.txt b/README.txt
+index 3b17507..9d6221a 100644
+--- a/README.txt
++++ b/README.txt
+@@ -65,7 +65,7 @@ that only markup you would like to allow via HTML and/or Markdown is
+ configured to be allowed.
+ 
+ If you on the other hand want to make sure that all converted Markdown
+-text is perserved, run it before the Markdown filter. Note that blockquoting
++text is preserved, run it before the Markdown filter. Note that blockquoting
+ with Markdown doesn't work in this case since "Limit allowed HTML tags" filter
+ converts the ">" in to "&gt;".
+ 

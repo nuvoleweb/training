@@ -22,7 +22,9 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
-        "drupal/ds": "8.2.5"
+        "drupal/ds": "8.2.5",
+        "drupal/markdown": "8.1.0",
+        "drupal/maxlength": "dev-8.x-1.x"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -53,7 +55,8 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "du -h -s web/"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
@@ -67,6 +70,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
-        }
+        },
+        "patches": {
+            "drupal/markdown": {
+                "Fix typo in README.": "patches/markdown--fix-typo.patch"
+            }
+       }
     }
 }
