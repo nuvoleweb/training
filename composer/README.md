@@ -44,3 +44,25 @@ composer require drupal/ds 8.2.5
 # Add the admin_toolbar module as development dependency, version 8.x-1.10 to 8.x-2.0 not included.
 composer require --dev drupal/admin_toolbar ~8.1.10
 ```
+
+## Exercise 3: Full Composer workflow.
+
+The resulting `composer.json` is at https://github.com/nuvoleweb/training/blob/composer-3/composer/my-project-built/composer.json
+
+### Add a post-install script
+
+Done in `composer.json`.
+
+### Add the `markdown` module, a patch, and download+patch the module.
+
+Done in `composer.json`.
+
+### Add the `maxlength` module, dev version, and patch it manually.
+
+Done in `composer.json` and manual editing.
+
+### Detect applied differences.
+
+```bash
+composer status -v
+```
